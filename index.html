@@ -1,97 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
 
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<head>
+  <meta charset="utf-8" />
 
-    <meta
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      name="viewport"
-    />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 
-    <title>Trendtial</title>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
 
-    <meta property="og:title" content="Trendtial" />
+  <title>Trendtial</title>
 
-    <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Trendtial" />
 
-    <link rel="canonical" href="//" />
+  <meta property="og:locale" content="en_US" />
 
-    <meta property="og:url" content="//" />
+  <link rel="canonical" href="//" />
 
-    <meta
-      name="description"
-      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    />
+  <meta property="og:url" content="//" />
 
-    <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <meta name="description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
 
-    <meta name="theme-color" content="#5540af" />
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
 
-    <meta property="og:site_name" content="Atom Template" />
+  <meta name="theme-color" content="#5540af" />
 
-    <meta property="og:image" content="//assets/img/social.jpg" />
+  <meta property="og:site_name" content="Atom Template" />
 
-    <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="//assets/img/social.jpg" />
 
-    <meta name="twitter:site" content="@tailwindmade" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <link
-      crossorigin="crossorigin"
-      href="https://fonts.gstatic.com"
-      rel="preconnect"
-    />
+  <meta name="twitter:site" content="@tailwindmade" />
 
-    <link
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-      rel="preload"
-    />
+  <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="preload" />
 
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <link
-      crossorigin="anonymous"
-      href="/assets/styles/main.min.css"
-      media="screen"
-      rel="stylesheet"
-    />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 
-    <script
-      defer
-      src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
-    ></script>
+  <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
 
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrQkTy+4T9oI5r3R3TOOe7ifdVZ7yl1Fl8IlXb1/n5sY5fp5CPO60e6M0A0/uFkAAAS8tQj+sq14G4n/zQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+  <script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></script>
 
-  <body
-    :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
-    class="relative"
-    x-data="{ mobileMenu: false }"
-  >
-    <div id="main" class="relative">
-      <div
-        x-data="{
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrQkTy+4T9oI5r3R3TOOe7ifdVZ7yl1Fl8IlXb1/n5sY5fp5CPO60e6M0A0/uFkAAAS8tQj+sq14G4n/zQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      .projects-container img {
+        border: 1px solid rgb(197, 197, 197); 
+      }
+    </style>
+</head>
+
+<body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+  <div id="main" class="relative">
+    <div x-data="{
     triggerNavItem(id) {
         $scroll(id)
     },
@@ -99,58 +71,38 @@
         mobileMenu = false;
         this.triggerNavItem(id)
     }
-}"
-      >
-        <div class="absolute top-0 z-50 w-full py-3 sm:py-5">
-          <div class="container flex items-center justify-between">
-            <div>
-              <a href="/">
-                <img
-                  src="/assets/img/logo-tr.png"
-                  class="w-24 lg:w-48"
-                  alt="logo image"
-                />
-              </a>
-            </div>
-            <div class="hidden lg:block">
-              <ul class="flex items-center">
-                <li class="group pl-6">
-                  <span
-                    @click="triggerNavItem('#about')"
-                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-                    >About</span
-                  >
+}">
+      <div class="absolute top-0 z-50 w-full py-3 sm:py-5">
+        <div class="container flex items-center justify-between">
+          <div>
+            <a href="/">
+              <img src="/assets/img/logo-tr.png" class="w-24 lg:w-48" alt="logo image" />
+            </a>
+          </div>
+          <div class="hidden lg:block">
+            <ul class="flex items-center">
+              <li class="group pl-6">
+                <span @click="triggerNavItem('#about')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">About</span>
 
-                  <span
-                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-                  ></span>
-                </li>
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
 
-                <li class="group pl-6">
-                  <span
-                    @click="triggerNavItem('#services')"
-                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-                    >Services</span
-                  >
+              <li class="group pl-6">
+                <span @click="triggerNavItem('#services')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Services</span>
 
-                  <span
-                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-                  ></span>
-                </li>
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
 
-                <li class="group pl-6">
-                  <span
-                    @click="triggerNavItem('#portfolio')"
-                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-                    >Portfolio</span
-                  >
+              <li class="group pl-6">
+                <span @click="triggerNavItem('#portfolio')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Portfolio</span>
 
-                  <span
-                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-                  ></span>
-                </li>
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
 
-                <!-- <li class="group pl-6">
+              <!-- <li class="group pl-6">
                   <span
                     @click="triggerNavItem('#clients')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
@@ -162,19 +114,14 @@
                   ></span>
                 </li> -->
 
-                <li class="group pl-6">
-                  <span
-                    @click="triggerNavItem('#work')"
-                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-                    >Work</span
-                  >
+              <li class="group pl-6">
+                <span @click="triggerNavItem('#work')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Work</span>
 
-                  <span
-                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-                  ></span>
-                </li>
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
 
-                <!-- <li class="group pl-6">
+              <!-- <li class="group pl-6">
                   <span
                     @click="triggerNavItem('#statistics')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
@@ -186,73 +133,49 @@
                   ></span>
                 </li> -->
 
-               
 
-                <li class="group pl-6">
-                  <span
-                    @click="triggerNavItem('#contact')"
-                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-                    >Contact</span
-                  >
 
-                  <span
-                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-                  ></span>
-                </li>
-              </ul>
-            </div>
-            <div class="block lg:hidden">
-              <button @click="mobileMenu = true">
-                <i class="bx bx-menu text-4xl text-white"></i>
-              </button>
-            </div>
+              <li class="group pl-6">
+                <span @click="triggerNavItem('#contact')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Contact</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="block lg:hidden">
+            <button @click="mobileMenu = true">
+              <i class="bx bx-menu text-4xl text-white"></i>
+            </button>
           </div>
         </div>
+      </div>
 
-        <div
-          class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
-          :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
-        >
-          <div
-            class="absolute right-0 min-h-screen w-2/3 bg-primary px-8 py-4 shadow md:w-1/3"
-          >
-            <button
-              class="absolute right-0 top-0 mr-4 mt-4"
-              @click="mobileMenu = false"
-            >
-              <img
-                src="/assets/img/icon-close.svg"
-                class="h-10 w-auto"
-                alt=""
-              />
-            </button>
+      <div
+        class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
+        :class="{ 'opacity-100 pointer-events-auto': mobileMenu }">
+        <div class="absolute right-0 min-h-screen w-2/3 bg-primary px-8 py-4 shadow md:w-1/3">
+          <button class="absolute right-0 top-0 mr-4 mt-4" @click="mobileMenu = false">
+            <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
+          </button>
 
-            <ul class="mt-8 flex flex-col">
-              <li class="py-2">
-                <span
-                  @click="triggerMobileNavItem('#about')"
-                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-                  >About</span
-                >
-              </li>
+          <ul class="mt-8 flex flex-col">
+            <li class="py-2">
+              <span @click="triggerMobileNavItem('#about')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">About</span>
+            </li>i
 
-              <li class="py-2">
-                <span
-                  @click="triggerMobileNavItem('#services')"
-                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-                  >Services</span
-                >
-              </li>
+            <li class="py-2">
+              <span @click="triggerMobileNavItem('#services')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Services</span>
+            </li>
 
-              <li class="py-2">
-                <span
-                  @click="triggerMobileNavItem('#portfolio')"
-                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-                  >Portfolio</span
-                >
-              </li>
+            <li class="py-2">
+              <span @click="triggerMobileNavItem('#portfolio')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Portfolio</span>
+            </li>
 
-<!--               <li class="py-2">
+            <!--               <li class="py-2">
                 <span
                   @click="triggerMobileNavItem('#clients')"
                   class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
@@ -260,15 +183,12 @@
                 >
               </li> -->
 
-              <li class="py-2">
-                <span
-                  @click="triggerMobileNavItem('#work')"
-                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-                  >Work</span
-                >
-              </li>
+            <li class="py-2">
+              <span @click="triggerMobileNavItem('#work')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Work</span>
+            </li>
 
-<!--               <li class="py-2">
+            <!--               <li class="py-2">
                 <span
                   @click="triggerMobileNavItem('#statistics')"
                   class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
@@ -276,32 +196,25 @@
                 >
               </li> -->
 
-             
 
-              <li class="py-2">
-                <span
-                  @click="triggerMobileNavItem('#contact')"
-                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-                  >Contact</span
-                >
-              </li>
-            </ul>
-          </div>
+
+            <li class="py-2">
+              <span @click="triggerMobileNavItem('#contact')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Contact</span>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div>
+      <div>
+        <div class="relative bg-cover bg-center bg-no-repeat py-8"
+          style="background-image: url(/assets/img/bg-hero.jpg)">
           <div
-            class="relative bg-cover bg-center bg-no-repeat py-8"
-            style="background-image: url(/assets/img/bg-hero.jpg)"
-          >
-            <div
-              class="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat"
-            ></div>
+            class="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat">
+          </div>
 
-            <div
-              class="container relative z-30 pb-12 pt-20 sm:pb-48 sm:pt-56 lg:pb-48 lg:pt-64"
-            >
-              <!-- <div class="flex flex-col items-center justify-center lg:flex-row">
+          <div class="container relative z-30 pb-12 pt-20 sm:pb-48 sm:pt-56 lg:pb-48 lg:pt-64">
+            <!-- <div class="flex flex-col items-center justify-center lg:flex-row">
       
       <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
         <h1
@@ -357,193 +270,139 @@
           </div>
         </div>
       </div> -->
-              <div class="relative z-10 max-w-3xl mx-auto p-5 text-center text-white">
-                <h1 class="mb-6 text-5xl font-bold md:text-6xl">
-                  Transform Your Digital Presence with Trendtial
-                </h1>
-                <br />
-                <p class="mb-6 text-xl text-white md:text-2xl">
-                  Expert Solutions in Digital Marketing, Shopify Store Setup,
-                  and Web App Development
-                </p>
-              </div>
+            <div class="relative z-10 max-w-4xl mx-auto p-5 text-center text-white">
+              <h1 class="mb-6 text-5xl font-bold md:text-6xl">
+                Transform Your Digital Presence with Trendtial
+              </h1>
+              <br />
+              <p class="mb-6 text-xl text-white md:text-2xl">
+                Expert Solutions in Digital Marketing, Shopify Store Setup,
+                and Web App Development
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="container py-16 md:py-20" id="services">
-          <h2
-            class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-          >
-            Our Services
-          </h2>
-          <h3
-            class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-          ></h3>
+      <div class="container py-16 md:py-20" id="services">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+          Our Services
+        </h2>
+        <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"></h3>
 
-          <div
-            class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
-          >
-            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                <div class="hidden group-hover:block">
-                  <img
-                    src="/assets/img/icon-development-white.svg"
-                    alt="development icon"
-                  />
-                </div>
-                <div class="block group-hover:hidden">
-                  <img
-                    src="/assets/img/icon-development-black.svg"
-                    alt="development icon"
-                  />
-                </div>
+        <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+          <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-development-white.svg" alt="development icon" />
               </div>
-              <div class="text-center">
-                <h3
-                  class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-                >
-                  WEB DEVELOPMENT
-                </h3>
-                <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p> -->
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-development-black.svg" alt="development icon" />
               </div>
             </div>
-            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                <div class="hidden group-hover:block">
-                  <img
-                    src="/assets/img/shopify.png"
-                    alt="content marketing icon"
-                  />
-                </div>
-                <div class="block group-hover:hidden">
-                  <img
-                    src="/assets/img/shopify.png"
-                    alt="content marketing icon"
-                  />
-                </div>
-              </div>
-              <div class="text-center">
-                <h3
-                  class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-                >
-                  Shopify Store Development
-                </h3>
-                <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                WEB DEVELOPMENT
+              </h3>
+              <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p> -->
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/shopify.png" alt="content marketing icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/shopify.png" alt="content marketing icon" />
               </div>
             </div>
-            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                <div class="hidden group-hover:block">
-                  <img
-                    src="/assets/img/icon-mobile-white.svg"
-                    alt="Mobile Application icon"
-                  />
-                </div>
-                <div class="block group-hover:hidden">
-                  <img
-                    src="/assets/img/icon-mobile-black.svg"
-                    alt="Mobile Application icon"
-                  />
-                </div>
-              </div>
-              <div class="text-center">
-                <h3
-                  class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-                >
-                  Digital Marketing
-                </h3>
-                <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Shopify Store Development
+              </h3>
+              <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p> -->
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-mobile-white.svg" alt="Mobile Application icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-mobile-black.svg" alt="Mobile Application icon" />
               </div>
             </div>
-            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                <div class="hidden group-hover:block">
-                  <img
-                    src="/assets/img/icon-email-white.svg"
-                    alt="Email Marketing icon"
-                  />
-                </div>
-                <div class="block group-hover:hidden">
-                  <img
-                    src="/assets/img/icon-email-black.svg"
-                    alt="Email Marketing icon"
-                  />
-                </div>
-              </div>
-              <div class="text-center">
-                <h3
-                  class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-                >
-                  Email Development
-                </h3>
-                <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Digital Marketing
+              </h3>
+              <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p> -->
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-email-white.svg" alt="Email Marketing icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-email-black.svg" alt="Email Marketing icon" />
               </div>
             </div>
-            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                <div class="hidden group-hover:block">
-                  <img
-                    src="/assets/img/icon-design-white.svg"
-                    alt="Theme Design icon"
-                  />
-                </div>
-                <div class="block group-hover:hidden">
-                  <img
-                    src="/assets/img/icon-design-black.svg"
-                    alt="Theme Design icon"
-                  />
-                </div>
-              </div>
-              <div class="text-center">
-                <h3
-                  class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-                >
-                  Graphic Design
-                </h3>
-                <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Email Development
+              </h3>
+              <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p> -->
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-design-white.svg" alt="Theme Design icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-design-black.svg" alt="Theme Design icon" />
               </div>
             </div>
-            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                <div class="hidden group-hover:block">
-                  <img
-                    src="/assets/img/icon-graphics-white.svg"
-                    alt="Graphic Design icon"
-                  />
-                </div>
-                <div class="block group-hover:hidden">
-                  <img
-                    src="/assets/img/icon-graphics-black.svg"
-                    alt="Graphic Design icon"
-                  />
-                </div>
-              </div>
-              <div class="text-center">
-                <h3
-                  class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-                >
-                  Web Design
-                </h3>
-                <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Graphic Design
+              </h3>
+              <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p> -->
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-graphics-white.svg" alt="Graphic Design icon" />
               </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-graphics-black.svg" alt="Graphic Design icon" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Web Design
+              </h3>
+              <!-- <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p> -->
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- <div class="container py-16 md:py-20" id="portfolio">
+      <!-- <div class="container py-16 md:py-20" id="portfolio">
           <h2
             class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
           >
@@ -637,99 +496,79 @@
           </div>
         </div> -->
 
-        <div class="container py-16 md:py-20" id="portfolio">
-          <h2
-            class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-          >
-            Check out Our Previous Work
-          </h2>
-          <h3
-            class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-          ></h3>
+      <div class="container py-16 md:py-20" id="portfolio">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+          Check out Our Previous Work
+        </h2>
+        <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"></h3>
 
-          <div
-            class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2"
-          >
-            <div class="group relative">
-              <a target="_blank" href="https://xpert-first-app.netlify.app/">
-                <img
-                  src="/assets/img/portfolio/xpertfirst.png"
-                  class="w-full opacity-75 shadow transition-all duration-300"
-                  alt="portfolio image"
-                />
-              </a>
-            </div>
-            <div class="group relative">
-              <a target="_blank" href="https://kingdom-sport.web.app/">
-                <img
-                  src="/assets/img/portfolio/kingdom-sports.png"
-                  class="w-full shadow transition-all duration-300 group-hover:opacity-75"
-                  alt="portfolio image"
-                />
-              </a>
-            </div>
-            <div class="group relative">
-              <a target="_blank" href="https://urmerch.co.uk/">
-                <img
-                  src="/assets/img/portfolio/urmerch.png"
-                  class="w-full shadow transition-all duration-300 group-hover:opacity-75"
-                  alt="portfolio image"
-                />
-              </a>
-            </div>
-            <div class="group relative">
-              <a
-                href="https://avenue5-international.netlify.app/"
-                target="_blank"
-              >
-                <img
-                  src="/assets/img/portfolio/crm.png"
-                  class="w-full shadow transition-all duration-300 group-hover:opacity-75"
-                  alt="portfolio image"
-                />
-              </a>
-            </div>
-               <div class="group relative">
-              <a
-                href="https://taxshieldconsultancy.netlify.app/"
-                target="_blank"
-              >
-                <img
-                  src="/assets/img/portfolio/tax-shield.png"
-                  class="w-full shadow transition-all duration-300 group-hover:opacity-75"
-                  alt="portfolio image"
-                />
-              </a>
-            </div>
-               <div class="group relative">
-              <a
-                href="https://bulkbazaar.netlify.app/"
-                target="_blank"
-              >
-                <img
-                  src="/assets/img/portfolio/bulk-bazar.png"
-                  class="w-full shadow transition-all duration-300 group-hover:opacity-75"
-                  alt="portfolio image"
-                />
-              </a>
-            </div>
+        <div class="mx-auto projects-container grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
+          <div class="group relative">
+            <a target="_blank" href="https://xpert-first-app.netlify.app/">
+              <img src="/assets/img/portfolio/xpertfirst.png"
+                class="w-full opacity-75 shadow transition-all duration-300" alt="portfolio image" />
+            </a>
+          </div>
+          <div class="group relative">
+            <a target="_blank" href="https://kingdom-sport.web.app/">
+              <img src="/assets/img/portfolio/kingdom-sports.png"
+                class="w-full shadow transition-all duration-300 group-hover:opacity-75" alt="portfolio image" />
+            </a>
+          </div>
+          <div class="group relative">
+            <a target="_blank" href="https://urmerch.co.uk/">
+              <img src="/assets/img/portfolio/urmerch.png"
+                class="w-full shadow transition-all duration-300 group-hover:opacity-75" alt="portfolio image" />
+            </a>
+          </div>
+          <div class="group relative">
+            <a href="https://avenue5-international.netlify.app/" target="_blank">
+              <img src="/assets/img/portfolio/crm.png"
+                class="w-full shadow transition-all duration-300 group-hover:opacity-75" alt="portfolio image" />
+            </a>
+          </div>
+          <div class="group relative">
+            <a href="https://taxshieldconsultancy.netlify.app/" target="_blank">
+              <img src="/assets/img/portfolio/tax-shield.png"
+                class="w-full shadow transition-all duration-300 group-hover:opacity-75" alt="portfolio image" />
+            </a>
+          </div>
+          <div class="group relative">
+            <a href="https://bulkbazaar.netlify.app/" target="_blank">
+              <img src="/assets/img/portfolio/bulk-bazar.png"
+                class="w-full shadow transition-all duration-300 group-hover:opacity-75" alt="portfolio image" />
+            </a>
+          </div>
 
-               <div class="group relative">
-              <a
-                href="https://sphora-app-project-mm.netlify.app/shop"
-                target="_blank"
-              >
-                <img
-                  src="/assets/img/portfolio/sephora.png"
-                  class="w-full shadow transition-all duration-300 group-hover:opacity-75"
-                  alt="portfolio image"
-                />
-              </a>
-            </div>
+          <div class="group relative">
+            <a href="https://sphora-app-project-mm.netlify.app/shop" target="_blank">
+              <img src="/assets/img/portfolio/sephora.png"
+                class="w-full shadow transition-all duration-300 group-hover:opacity-75" alt="portfolio image" />
+            </a>
+          </div>
+          <div class="group relative">
+
+            <a href="https://traveloguers.com/" target="_blank">
+              <img src="/assets/img/portfolio/traveloguers.png"
+                class="w-full shadow transition-all duration-300 group-hover:opacity-75" alt="portfolio image" />
+            </a>
+          </div>
+          <div class="group relative">
+            <a href="https://avenue5central.com/" target="_blank">
+              <img src="/assets/img/portfolio/avenue5central.png"
+                class="w-full shadow transition-all duration-300 group-hover:opacity-75" alt="portfolio image" />
+            </a>
+          </div>
+          <div class="group relative">
+            <a href="https://avenue5international.com/" target="_blank">
+              <img src="/assets/img/portfolio/avenue5-international.png"
+                class="w-full shadow transition-all duration-300 group-hover:opacity-75" alt="portfolio image" />
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- <div class="bg-grey-50" id="clients">
+      <!-- <div class="bg-grey-50" id="clients">
           <div class="container py-16 md:py-20">
             <div class="mx-auto w-full sm:w-3/4 lg:w-full">
               <h2
@@ -783,28 +622,22 @@
           </div>
         </div> -->
 
-        <div class="container py-16 md:py-20" id="work">
-          <h2
-            class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-          >
-            Our work experience
-          </h2>
-          <h3
-            class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-          >
-            Here's what we did before freelancing
-          </h3>
+      <div class="container py-16 md:py-20" id="work">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+          Our work experience
+        </h2>
+        <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+          Here's what we did before freelancing
+        </h3>
 
-          <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
-            <!-- <span
+        <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+          <!-- <span
               class="absolute inset-y-0 left-2/5 ml-10 hidden w-0.5 bg-grey-40 md:block"
             ></span> -->
 
-            <div
-              class="mt-8 flex flex-col text-center md:flex-row md:text-left"
-            >
-              <div class="md:w-2/5">
-                <!-- <div class="flex justify-center md:justify-start">
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+            <div class="md:w-2/5">
+              <!-- <div class="flex justify-center md:justify-start">
                   <span class="shrink-0">
                      <img
                       src="/assets/img/logo-spotify.svg"
@@ -818,130 +651,106 @@
                     ></span> 
                   </div>
                 </div> -->
-              </div>
-              <div class="md:w-3/5">
-                <div class="relative flex md:pl-18">
-                  <!-- <span
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <!-- <span
                     class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
                   ></span> -->
 
-                  <div class="mt-1 flex">
-                    <i
-                      class="bx bxs-right-arrow hidden text-primary md:block"
-                    ></i>
-                    <div class="md:-mt-1 md:pl-8">
-                      <span class="block font-body font-bold text-grey-40"
-                        >Apr 2015 - Mar 2018</span
-                      >
-                      <span
-                        class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                        >Digital Marketing</span
-                      >
-                      <div class="pt-2">
-                        <!-- <span class="block font-body text-black"
+                <div class="mt-1 flex">
+                  <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">Apr 2015 - Mar 2018</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">Digital
+                      Marketing</span>
+                    <div class="pt-2">
+                      <!-- <span class="block font-body text-black"
                   >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
                   venenatis enim.</span
                 > -->
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="mt-8 flex flex-col text-center md:flex-row md:text-left"
-            >
-              <div class="md:w-2/5">
-                <div class="flex justify-center md:justify-start">
-                  <span class="shrink-0">
-                    <!-- <img
+          </div>
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+            <div class="md:w-2/5">
+              <div class="flex justify-center md:justify-start">
+                <span class="shrink-0">
+                  <!-- <img
                       src="/assets/img/logo-microsoft.svg"
                       class="h-auto w-32"
                       alt="company logo"
                     /> -->
-                  </span>
-                  <div class="relative ml-3 hidden w-full md:block">
-                    <!-- <span
+                </span>
+                <div class="relative ml-3 hidden w-full md:block">
+                  <!-- <span
                       class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
                     ></span> -->
-                  </div>
                 </div>
               </div>
-              <div class="md:w-3/5">
-                <div class="relative flex md:pl-18">
-                  <!-- <span
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <!-- <span
                     class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
                   ></span> -->
 
-                  <div class="mt-1 flex">
-                    <i
-                      class="bx bxs-right-arrow hidden text-primary md:block"
-                    ></i>
-                    <div class="md:-mt-1 md:pl-8">
-                      <span class="block font-body font-bold text-grey-40"
-                        >Mar 2018 - September 2019</span
-                      >
-                      <span
-                        class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                        >Shopify Services</span
-                      >
-                      <div class="pt-2">
-                        <!-- <span class="block font-body text-black"
+                <div class="mt-1 flex">
+                  <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">Mar 2018 - September 2019</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">Shopify
+                      Services</span>
+                    <div class="pt-2">
+                      <!-- <span class="block font-body text-black"
                   >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
                   venenatis enim.</span
                 > -->
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="mt-8 flex flex-col text-center md:flex-row md:text-left"
-            >
-              <div class="md:w-2/5">
-                <div class="flex justify-center md:justify-start">
-                  <span class="shrink-0">
-                    <!-- <img
+          </div>
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+            <div class="md:w-2/5">
+              <div class="flex justify-center md:justify-start">
+                <span class="shrink-0">
+                  <!-- <img
                       src="/assets/img/logo-fedex.svg"
                       class="h-auto w-32"
                       alt="company logo"
                     /> -->
-                  </span>
-                  <div class="relative ml-3 hidden w-full md:block">
-                    <!-- <span
+                </span>
+                <div class="relative ml-3 hidden w-full md:block">
+                  <!-- <span
                       class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
                     ></span> -->
-                  </div>
                 </div>
               </div>
-              <div class="md:w-3/5">
-                <div class="relative flex md:pl-18">
-                  <!-- <span
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <!-- <span
                     class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
                   ></span> -->
 
-                  <div class="mt-1 flex">
-                    <i
-                      class="bx bxs-right-arrow hidden text-primary md:block"
-                    ></i>
-                    <div class="md:-mt-1 md:pl-8">
-                      <span class="block font-body font-bold text-grey-40"
-                        >October 2019 - Feb 2021</span
-                      >
-                      <span
-                        class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                        >Web Development</span
-                      >
-                      <div class="pt-2">
-                        <!-- <span class="block font-body text-black"
+                <div class="mt-1 flex">
+                  <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">October 2019 - Feb 2021</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">Web Development</span>
+                    <div class="pt-2">
+                      <!-- <span class="block font-body text-black"
                   >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
                   venenatis enim.</span
                 > -->
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -949,204 +758,132 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div
-          class="bg-cover bg-top bg-no-repeat pb-16 md:py-16 lg:py-24"
-          style="background-image: url(/assets/img/experience-figure.png)"
-          id="statistics"
-        >
-          <div class="container">
-            <div
-              class="mx-auto w-5/6 bg-white py-16 shadow md:w-11/12 lg:py-20 xl:py-24 2xl:w-full"
-            >
+      <div class="bg-cover bg-top bg-no-repeat pb-16 md:py-16 lg:py-24"
+        style="background-image: url(/assets/img/experience-figure.png)" id="statistics">
+        <div class="container">
+          <div class="mx-auto w-5/6 bg-white py-16 shadow md:w-11/12 lg:py-20 xl:py-24 2xl:w-full">
+            <div class="grid grid-cols-2 gap-5 md:gap-8 xl:grid-cols-4 xl:gap-5">
+              <div class="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
+                <div>
+                  <img src="/assets/img/icon-project.svg" class="mx-auto h-12 w-auto md:h-20" alt="icon project" />
+                </div>
+                <div class="pt-5 md:pl-5 md:pt-0">
+                  <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
+                    12
+                  </h1>
+                  <h4 class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl">
+                    Finished Projects
+                  </h4>
+                </div>
+              </div>
+
+              <div class="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
+                <div>
+                  <img src="/assets/img/icon-award.svg" class="mx-auto h-12 w-auto md:h-20" alt="icon award" />
+                </div>
+                <div class="pt-5 md:pl-5 md:pt-0">
+                  <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
+                    3
+                  </h1>
+                  <h4 class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl">
+                    Awards Won
+                  </h4>
+                </div>
+              </div>
+
               <div
-                class="grid grid-cols-2 gap-5 md:gap-8 xl:grid-cols-4 xl:gap-5"
-              >
-                <div
-                  class="flex flex-col items-center justify-center text-center md:flex-row md:text-left"
-                >
-                  <div>
-                    <img
-                      src="/assets/img/icon-project.svg"
-                      class="mx-auto h-12 w-auto md:h-20"
-                      alt="icon project"
-                    />
-                  </div>
-                  <div class="pt-5 md:pl-5 md:pt-0">
-                    <h1
-                      class="font-body text-2xl font-bold text-primary md:text-4xl"
-                    >
-                      12
-                    </h1>
-                    <h4
-                      class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-                    >
-                      Finished Projects
-                    </h4>
-                  </div>
+                class="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
+                <div>
+                  <img src="/assets/img/icon-happy.svg" class="mx-auto h-12 w-auto md:h-20" alt="icon happy clients" />
                 </div>
-
-                <div
-                  class="flex flex-col items-center justify-center text-center md:flex-row md:text-left"
-                >
-                  <div>
-                    <img
-                      src="/assets/img/icon-award.svg"
-                      class="mx-auto h-12 w-auto md:h-20"
-                      alt="icon award"
-                    />
-                  </div>
-                  <div class="pt-5 md:pl-5 md:pt-0">
-                    <h1
-                      class="font-body text-2xl font-bold text-primary md:text-4xl"
-                    >
-                      3
-                    </h1>
-                    <h4
-                      class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-                    >
-                      Awards Won
-                    </h4>
-                  </div>
+                <div class="pt-5 md:pl-5 md:pt-0">
+                  <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
+                    8
+                  </h1>
+                  <h4 class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl">
+                    Happy Clients
+                  </h4>
                 </div>
+              </div>
 
-                <div
-                  class="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0"
-                >
-                  <div>
-                    <img
-                      src="/assets/img/icon-happy.svg"
-                      class="mx-auto h-12 w-auto md:h-20"
-                      alt="icon happy clients"
-                    />
-                  </div>
-                  <div class="pt-5 md:pl-5 md:pt-0">
-                    <h1
-                      class="font-body text-2xl font-bold text-primary md:text-4xl"
-                    >
-                      8
-                    </h1>
-                    <h4
-                      class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-                    >
-                      Happy Clients
-                    </h4>
-                  </div>
+              <div
+                class="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
+                <div>
+                  <img src="/assets/img/icon-puzzle.svg" class="mx-auto h-12 w-auto md:h-20" alt="icon puzzle" />
                 </div>
-
-                <div
-                  class="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0"
-                >
-                  <div>
-                    <img
-                      src="/assets/img/icon-puzzle.svg"
-                      class="mx-auto h-12 w-auto md:h-20"
-                      alt="icon puzzle"
-                    />
-                  </div>
-                  <div class="pt-5 md:pl-5 md:pt-0">
-                    <h1
-                      class="font-body text-2xl font-bold text-primary md:text-4xl"
-                    >
-                      99
-                    </h1>
-                    <h4
-                      class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-                    >
-                      Bugs Fixed
-                    </h4>
-                  </div>
+                <div class="pt-5 md:pl-5 md:pt-0">
+                  <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
+                    99
+                  </h1>
+                  <h4 class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl">
+                    Bugs Fixed
+                  </h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
 
-        <div class="container py-16 md:py-20" id="contact">
-          <h2
-            class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-          >
-            Here's a contact form
-          </h2>
-          <h4
-            class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-          >
-            Have Any Questions?
-          </h4>
-          <div class="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
-            <!-- <p class="font-body text-grey-10">
+      <div class="container py-16 md:py-20" id="contact">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+          Here's a contact form
+        </h2>
+        <h4 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+          Have Any Questions?
+        </h4>
+        <div class="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
+          <!-- <p class="font-body text-grey-10">
       Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit
       condimentum turpis nisl sem, viverra habitasse urna ante lobortis
       fermentum accumsan. Viverra habitasse urna ante lobortis fermentum
       accumsan.
     </p> -->
+        </div>
+        <form id="contact_form" action="#" class="mx-auto w-full pt-10 sm:w-3/4">
+          <div class="flex flex-col md:flex-row">
+            <input  class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5"
+              placeholder="Name" type="text" id="contact_name" />
+            <input
+              class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:ml-3 md:mt-0 md:w-1/2 lg:ml-5"
+              placeholder="Email" type="text" id="contact_email" />
           </div>
-          <form class="mx-auto w-full pt-10 sm:w-3/4">
-            <div class="flex flex-col md:flex-row">
-              <input
-                class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5"
-                placeholder="Name"
-                type="text"
-                id="name"
-              />
-              <input
-                class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:ml-3 md:mt-0 md:w-1/2 lg:ml-5"
-                placeholder="Email"
-                type="text"
-                id="email"
-              />
-            </div>
-            <textarea
-              class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-8"
-              placeholder="Message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <button
-              class="mt-6 flex items-center justify-center rounded bg-primary px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20"
-            >
-              Send
-              <i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
-            </button>
-          </form>
-          <div class="flex flex-col pt-16 lg:flex-row">
-            <div
-              class="w-full border-b-2 border-l-2 border-r-2 border-t-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3"
-            >
-              <div class="flex items-center">
-                <i class="bx bx-phone text-2xl text-grey-40"></i>
-                <p
-                  class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg"
-                >
-                  Phone
-                </p>
-              </div>
-              <p
-                class="pt-2 text-left font-body font-bold text-primary lg:text-lg"
-              >
-                +92 3392081234
+          <textarea class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-8"
+            placeholder="Message" id="contact_message" cols="30" rows="10"></textarea>
+          <button type="submit"
+            class="mt-6 flex items-center justify-center rounded bg-primary px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20">
+            Send
+            <i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
+          </button>
+        </form>
+        <div class="flex flex-col pt-16 lg:flex-row">
+          <div class="w-full border-b-2 border-l-2 border-r-2 border-t-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3">
+            <div class="flex items-center">
+              <i class="bx bx-phone text-2xl text-grey-40"></i>
+              <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+                Phone
               </p>
             </div>
-            <div
-              class="w-full border-b-2 border-l-2 border-r-2 border-t-0 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
-            >
-              <div class="flex items-center">
-                <i class="bx bx-envelope text-2xl text-grey-40"></i>
-                <p
-                  class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg"
-                >
-                  Email
-                </p>
-              </div>
-              <p
-                class="pt-2 text-left font-body font-bold text-primary lg:text-lg"
-              >
-                trendtial@gmail.com
+            <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
+              +92 3392081234
+            </p>
+          </div>
+          <div
+            class="w-full border-b-2 border-l-2 border-r-2 border-t-0 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
+            <div class="flex items-center">
+              <i class="bx bx-envelope text-2xl text-grey-40"></i>
+              <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+                Email
               </p>
             </div>
-            <!-- <div
+            <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
+              trendtial@gmail.com
+            </p>
+          </div>
+          <!-- <div
       class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
     >
       <div class="flex items-center">
@@ -1159,15 +896,15 @@
         123 New York D Block 1100, 2011 USA
       </p>
     </div> -->
-          </div>
         </div>
+      </div>
 
-        <!-- <div
+      <!-- <div
   class="h-72 bg-cover bg-center bg-no-repeat sm:h-64 md:h-72 lg:h-96"
   style="background-image: url(/assets/img/map.png)"
 ></div> -->
 
-        <div
+      <!-- <div
           class="relative bg-primary bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply lg:py-24"
           style="background-image: url(/assets/img/bg-cta.jpg)"
         >
@@ -1192,47 +929,36 @@
               </button>
             </form>
           </div>
-        </div>
-      </div>
+        </div> -->
+    </div>
 
-      <div class="bg-primary">
-        <div class="container flex flex-col justify-between py-6 sm:flex-row">
-          <p class="text-center font-body text-white md:text-left">
-            © Copyright 2024. All right reserved, Trendtial.
-          </p>
-          <div
-            class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0"
-          >
-            <a href="/">
-              <i
-                class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-            <a href="/" class="pl-4">
-              <i
-                class="bx bxl-twitter text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-            <a href="/" class="pl-4">
-              <i
-                class="bx bxl-dribbble text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-            <a href="/" class="pl-4">
-              <i
-                class="bx bxl-linkedin text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-            <a href="/" class="pl-4">
-              <i
-                class="bx bxl-instagram text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-          </div>
+    <div class="bg-primary">
+      <div class="container flex flex-col justify-between py-6 sm:flex-row">
+        <p class="text-center font-body text-white md:text-left">
+          © Copyright 2024. All right reserved, Trendtial.
+        </p>
+        <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+          <!-- <a href="/">
+            <i class="bx bxl-facebook-square text-2xl text-white"></i>
+          </a> -->
+          <a href="https://www.tiktok.com/@trendtial_marketing" target="_blank" class="pl-4">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M6,3c-1.64497,0 -3,1.35503 -3,3v12c0,1.64497 1.35503,3 3,3h12c1.64497,0 3,-1.35503 3,-3v-12c0,-1.64497 -1.35503,-3 -3,-3zM6,5h12c0.56503,0 1,0.43497 1,1v12c0,0.56503 -0.43497,1 -1,1h-12c-0.56503,0 -1,-0.43497 -1,-1v-12c0,-0.56503 0.43497,-1 1,-1zM12,7v7c0,0.56503 -0.43497,1 -1,1c-0.56503,0 -1,-0.43497 -1,-1c0,-0.56503 0.43497,-1 1,-1v-2c-1.64497,0 -3,1.35503 -3,3c0,1.64497 1.35503,3 3,3c1.64497,0 3,-1.35503 3,-3v-3.76758c0.61615,0.43892 1.25912,0.76758 2,0.76758v-2c-0.04733,0 -0.73733,-0.21906 -1.21875,-0.63867c-0.48142,-0.41961 -0.78125,-0.94634 -0.78125,-1.36133z"></path></g></g>
+</svg>
+          </a>
+<!-- 
+          <a href="/" class="pl-4">
+            <i class="bx bxl-linkedin text-2xl text-white "></i>
+          </a> -->
+          <a href="https://www.instagram.com/trendtialmarketing" target="_blank" class="pl-4">
+            <i class="bx bxl-instagram text-2xl text-white"></i>
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="/assets/js/main.js"></script>
-  </body>
+  <script src="/assets/js/main.js"></script>
+</body>
+
 </html>
